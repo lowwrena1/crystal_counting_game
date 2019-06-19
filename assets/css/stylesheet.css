@@ -1,26 +1,29 @@
 #header1 {
-    background-color:orange;
+    background-color: orange;
     width: 500px;
 }
-#instructions{
+
+#instructions {
     background-color: peachpuff;
     width: 500px;
 }
-#left{
+
+#left {
     width: 500px;
     height: 150px;
 }
-#ntg{
+
+#ntg {
     background-color: greenyellow;
-    width:300px;
-    height:150px;
-    
+    width: 300px;
+    height: 150px;
+
 }
 
-#score{
-background-color: aqua;
-width: 200px;
-height: 150px;
+#score {
+    background-color: aqua;
+    width: 200px;
+    height: 150px;
 
 }
 
@@ -29,13 +32,14 @@ height: 150px;
     height: 80px;
 }
 
-#currentscore{
-width: 400px;
-height: 150px;
-background-color: blue;
+#currentscore {
+    width: 400px;
+    height: 150px;
+    background-color: blue;
 }
-#scorecard{
-width: 400px;
-height: 250px;
-background-color: blue;
+
+#scorecard {
+    width: 400px;
+    height: 250px;
+    background-color: blue;
 }

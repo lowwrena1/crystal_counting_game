@@ -1,15 +1,18 @@
 <!DOCTYPE html>
+
 <head>
     <title> Crystal counting game</title>
     <link rel="stylesheet" type="text/css" href="unit-4-game/assets/css/stylesheet.css">
+    <!-- insert links to javascript , jQuery, bootstrap.-->
 </head>
+
 <body>
     <div id="header1">
-    <h1> Crystal Collector!!</h1>
+        <h1> Crystal Collector!!</h1>
     </div>
 
-<div id="instructions">
-    <pre>
+    <div id="instructions">
+        <pre>
  You will be given a random number at the start of the game.
 
  There are four crystals below. By clicking on a crystal you 
@@ -23,27 +26,30 @@ the value of each crystal is hidden from you until you click on it
 each time when the game starts, the game will change the values of
 each crystal.
     </pre>
-</div>
-<!--float divs left.-->
-<div id="left">
-    <div id="ntg">Number to Guess: <span id="number-to-guess"></span></div>
-    
-<div id="score">
-    <div id="wins">Wins: <span id="wins"></span></div>
-    <br> <br> <br>
-    <div id="losses">Losses: <span id="losses"></span></div>
-</div> 
-</div>
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-<div id="images">
-        <img src="../unit-4-game/assets/images/crystal1.jpg" alt="c1" height="80px" width="100px">
-        <img src="../unit-4-game/assets/images/crystal2.jpg" alt="c2" height="80px" width="100px">        
-        <img src="../unit-4-game/assets/images/crystal3.jpg" alt="c3" height="80px" width="100px">
-        <img src="../unit-4-game/assets/images/crystal4.jpg" alt="c4" height="80px" width="100px">
-</div>
-<br>
+    </div>
+    <!--float divs left.-->
+    <div id="left">
+        <div id="ntg">Number to guess: <span id="number-to-guess"></span></div>
 
-  <div id="currentscore">Your current score: <span id="currentscore"></span></div>
-  <div id="scorecard"></div>
+        <div id="score">
+            <div id="wins">Wins: <span id="wins"></span></div>
+            <br> <br> <br>
+            <div id="losses">Losses: <span id="losses"></span></div>
+        </div>
+    </div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <div id="images">
+        <img src="../unit-4-game/assets/images/crystal1.jpg" alt="" id="c1" height="80px" width="100px">
+        <img src="../unit-4-game/assets/images/crystal2.jpg" alt="" id="c2" height="80px" width="100px">
+        <img src="../unit-4-game/assets/images/crystal3.jpg" alt="" id="c3" height="80px" width="100px">
+        <img src="../unit-4-game/assets/images/crystal4.jpg" alt="" id= "c4" height="80px" width="100px">
+    </div>
+    <br>
 
+    <div id="currentscore">Your current score: <span id="currentscore"></span></div>
+    <div id="scorecard"></div>
+    <script src="jquery-3.4.0.min.js"></script>
+
+ <script src="../unit-4-game/assets/javscript/game.js"></script>
 </body>
+</html>
