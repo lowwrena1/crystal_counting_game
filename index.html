@@ -2,11 +2,13 @@
 
 <head>
     <title> Crystal counting game</title>
-    <link rel="stylesheet" type="text/css" href="unit-4-game/assets/css/stylesheet.css">
-    <!-- insert links to javascript , jQuery, bootstrap.-->
-    <script src="../unit-4-game/assets/javscript/game.js"></script>
-    <script src="jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
     
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
 </head>
 
 <body>
@@ -30,14 +32,14 @@ each time when the game starts, the game will change the values of
 each crystal.
     </pre>
     </div>
-    <!--float divs left.-->
+    
     <div id="left">
         <div id="targetScore">Target Score: <span id="targetScore"></span></div>
 
         <div id="score">
-            <div id="wins">Wins: <span id="wins"></span></div>
+            <div id="wins">Wins: <span id="winNum"></span></div>
             <br> <br> <br>
-            <div id="losses">Losses: <span id="losses"></span></div>
+            <div id="losses">Losses: <span id="lossNum"></span></div>
         </div>
     </div>
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
