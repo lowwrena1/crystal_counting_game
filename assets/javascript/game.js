@@ -31,11 +31,76 @@ var lossCount = 0;
 
 //-----------------------------------------------
 //functions
-
+var getRandom = function(min, max){
+    return Math.floor(Math.random()= (max - min + 1)) +min;
+}
+var startGame = function() {
+    //reset current
+    currentScore = 0;
+    //target score between 19-120
+    targetScore = getRandom(19, 120);
+    //set different values for each crystal
+    crystal.one.value = getRandom (1 , 12);
+    crystal.two.value = getRandom (1 , 12);
+    crystal.three.value = getRandom (1 , 12);
+    crystal.four.value = getRandom (1 , 12);
+    //change html to refleck the changes
+}
+$("#yourScore").html(currentScore);
+$("#targetScore").html(targetScore);
 //-----------------------
-
+console.log("Target Score: " + targetScore);
+//responding to clicks on the crystals
+var addValues = funtion(crystal) {
+    currentScore = currentScore + crystal.value; 
+    $("#currentScore").html(curentScore);
+    checkWin();
+    console.log(" your score: + currentScore");
+}
+//see if user won
+var checkWin = function(){
+if(currentScore > targetScore){ alert("Sorry You Lost...");
+console.log ("you lost");
+lossCount++;
+$("#losses").html(lossCount);
+startGame();
+}
+else if(currentScore === targetScore){
+    alert("Congrats!! You've Won!!!");
+console.log("you won!");
+winCount++;
+$("#wins").html(winCount);
+startGame();
+}
+}
 //main process
+//starts the game the first time.
+startGame();
+$("#c1").click(function(){
+    addValues(crystal.one)
+});
+startGame();
+$("#c2").click(function(){
+    addValues(crystal.two)
+});
+startGame();
+$("#c3").click(function(){
+    addValues(crystal.three)
+});
+startGame();
+$("#c4").click(function(){
+    addValues(crystal.four)
+});
 //----click events----
 $("#c1").click(function(){
+    alert("test");
+});
+$("#c2").click(function(){
+    alert("test");
+});
+$("#c3").click(function(){
+    alert("test");
+});
+$("#c4").click(function(){
     alert("test");
 });

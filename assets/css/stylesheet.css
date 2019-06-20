@@ -12,8 +12,8 @@
     width: 500px;
     height: 150px;
 }
-
-#ntg {
+/* figure out why target score isn't being assissted by css */
+#targetScore {
     background-color: greenyellow;
     width: 300px;
     height: 150px;
@@ -32,7 +32,7 @@
     height: 80px;
 }
 
-#currentscore {
+#currentScore {
     width: 400px;
     height: 150px;
     background-color: blue;
