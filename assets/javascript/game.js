@@ -45,16 +45,18 @@ $(document).ready(function() {
         //reset current
         currentScore = 0;
         //target score between 19-120 (showing options outside of 19-20 not sure why???)
-        targetScore = getRandom(19, 120);
+        targetScore = parseFloat(getRandom(19, 120));
+        console.log(targetScore);
         //set different values for each crystal
         crystal.one.value = getRandom (1 , 12);
         crystal.two.value = getRandom (1 , 12);
         crystal.three.value = getRandom (1 , 12);
         crystal.four.value = getRandom (1 , 12);
         //change html to refleck the changes
-    }
+    
     $("#yourScore").html(currentScore);
-    $("#targetScore").html(targetScore);
+    $("#tarScore").html(targetScore);
+    }
     //-----------------------
     console.log("Target Score: " + targetScore);
     //responding to clicks on the crystals
@@ -76,7 +78,7 @@ $(document).ready(function() {
             alert("Congrats!! You've Won!!!");
             console.log("you won!");
             winCount++;
-            $("#winNum").html(winCount);
+            $("#winNum").html(winCount); //not displaying
             startGame();
         }
     }
