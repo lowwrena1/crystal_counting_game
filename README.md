@@ -3,4 +3,4 @@ A fun game to play where you must attempt to click on four different crystals th
 ## Technologies used:
 * html
 * css 
-*javascript
+* javascript
